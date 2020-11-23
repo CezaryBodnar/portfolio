@@ -1,0 +1,91 @@
+.modal-content {
+    background-color: #F1F1F1;
+    width: 90%;
+    height: 100vh;
+    overflow-y: scroll;
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: rgb(43, 43, 43);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .modal-wrapper{
+    pointer-events: none;
+    position: fixed;
+    left: 0; 
+    right: 0;
+    bottom: 0;
+    top:0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .back-drop {
+    background: #000000;
+    opacity: 90%;
+    height: 100vh;
+    position: fixed;
+    transition: all 1.3s;
+    width: 100%;
+    z-index: 999;
+  }
+  .project-title {
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+  }
+  .close{
+    margin: 15px 20px 0px 0px;
+    font-size:30px;
+    float:right;
+  }
+
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(59, 59, 59); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(49, 49, 49); 
+  }
+
+  .backButton {
+    position: absolute;
+    height: 44px;
+    line-height: 50px;
+    width: 44px;  
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin: 20px 0px 0px 20px;
+  }
+  .backButton:hover{
+    background-color: #494949;
+  }
+  .backButton i{
+    font-size: 20px;
+    margin-right: 2px;
+  }
