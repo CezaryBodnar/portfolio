@@ -63,7 +63,7 @@ export const Projects = ({ language, project1, setProject1,
                     </div>
                 </div>
                 <div className="project-tile tile4">
-                    <img className="project-image" src="/projects/streamerrates.png" alt="" />
+                    <img className="project-image" src="/projects/streamerrates.PNG" alt="" />
 
                     <div className="overlay" /* onClick={() => setProject4(true)} */>
                         <h1 style={{ margin: '0px', fontSize: "120%" }}>{language === 'en' ? 'Streamer rates' : 'Ocena streamerów'}</h1>

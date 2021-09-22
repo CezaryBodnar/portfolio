@@ -35,9 +35,9 @@ export const About = ({ language }) => {
                 </TabList>
                 <TabPanel>
                     <div className="gallery-content">
-                        <img className="gallery-image-drawing" src="/images/mr_rekkles.JPG" alt="x" />
-                        <img className="gallery-image-drawing" src="/images/infografika.JPG" alt="x" />
-                        <img className="gallery-image-drawing" src="/images/jarmark.JPG" alt="x" />
+                        <img className="gallery-image-drawing" src="/images/mr_rekkles.jpg" alt="x" />
+                        <img className="gallery-image-drawing" src="/images/infografika.jpg" alt="x" />
+                        <img className="gallery-image-drawing" src="/images/jarmark.jpg" alt="x" />
                     </div>
                 </TabPanel>
                 <TabPanel>
