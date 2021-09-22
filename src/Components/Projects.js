@@ -63,13 +63,13 @@ export const Projects = ({ language, project1, setProject1,
                     </div>
                 </div>
                 <div className="project-tile tile4">
-                    <img className="project-image" src="/projects/filtrowanie_projekt.png" alt="" />
+                    <img className="project-image" src="/projects/streamerrates.png" alt="" />
 
                     <div className="overlay" /* onClick={() => setProject4(true)} */>
-                        <h1 style={{ margin: '0px', fontSize: "120%" }}>{language === 'en' ? 'Filters & Sorting' : 'Filtrowanie&sortowanie'}</h1>
+                        <h1 style={{ margin: '0px', fontSize: "120%" }}>{language === 'en' ? 'Streamer rates' : 'Ocena streamerów'}</h1>
                         <hr></hr>
-                        <span style={{ marginBottom: "50px", fontSize: "115%" }}>{language === 'en' ? 'Project of interface elements' : 'Projekt elementów interfejsu'}</span>
-                        <a href="https://cezarybodnar813283.invisionapp.com/prototype/ckhv4ivop00b1cs01ucl6yuja/play" target="_blank" rel="noopener noreferrer">
+                        <span style={{ marginBottom: "50px", fontSize: "115%" }}>{language === 'en' ? 'Project of site for rating creators from twitch.tv' : 'Projekt strony do oceny twórców z platformy twitch.tv'}</span>
+                        <a href="https://www.figma.com/file/kgQqghRhEdxC54yCFkK89w/StreamerRates?node-id=0%3A1" target="_blank" rel="noopener noreferrer">
                             <span className="contact-icon"><i className="fas fa-project-diagram"></i></span></a>
                     </div>
                 </div>

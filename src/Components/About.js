@@ -27,11 +27,19 @@ export const About = ({ language }) => {
             <Tabs>
                 <TabList>
                     <div className="skills">
+                        <Tab><span className="skill-item">{language === 'en' ? '2D Graphics' : 'Grafika 2D '}</span></Tab>
                         <Tab><span className="skill-item">Frontend dev</span></Tab>
                         <Tab><span className="skill-item">{language === 'en' ? '3D Graphics' : 'Grafika 3D '}</span></Tab>
                         <Tab><span className="skill-item">{language === 'en' ? 'Drawing' : 'Rysowanie'}</span></Tab>
                     </div>
                 </TabList>
+                <TabPanel>
+                    <div className="gallery-content">
+                        <img className="gallery-image-drawing" src="/images/mr_rekkles.JPG" alt="x" />
+                        <img className="gallery-image-drawing" src="/images/infografika.JPG" alt="x" />
+                        <img className="gallery-image-drawing" src="/images/jarmark.JPG" alt="x" />
+                    </div>
+                </TabPanel>
                 <TabPanel>
                     <div className="gallery-content">
                         <img className="gallery-image" src="/images/1.JPG" alt="" />
