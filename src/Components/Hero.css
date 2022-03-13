@@ -39,3 +39,8 @@ margin-top: 5%;
     background-position: 50% 50%;
     z-index: -1;
   }
+  @media (max-width: 480px) {
+.hero-title{
+margin-left: 7%;
+}
+  }
