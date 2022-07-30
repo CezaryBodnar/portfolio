@@ -26,7 +26,7 @@ export const Footer = () => {
                     </span>
                 </div>
                 <hr></hr>
-                <span style={{ fontSize: "14px", marginTop: "20px" }}>Copyright © 2020 Cezary Bodnar</span>
+                <span style={{ fontSize: "14px", marginTop: "20px" }}>Copyright © 2022 Cezary Bodnar</span>
             </div>
         </footer>
     )

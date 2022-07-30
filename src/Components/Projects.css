@@ -1,18 +1,18 @@
 .project-container{
     color: rgb(43, 43, 43);
     padding-bottom: 50px;
-    font-size: 20px;
+    font-size: 16px;
   }
 .projects-content{
   display: grid;
   margin: 0px 120px 0px 120px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   /* grid-template-rows: 1fr 1fr 1fr; */
   grid-template-rows: 1fr 1fr;
   grid-template-areas: 
-    "tile1 tile1 tile1 tile2 tile2"
-    "tile3 tile3 tile4 tile4 tile4"
-    "tile5 tile5 tile5 tile6 tile6";
+    "tile1 tile1 tile2 tile2 tile3 tile3"
+    "tile4 tile4 tile5 tile5 tile6 tile6";
+
 }
 .tile1 {
   grid-area: tile1;
@@ -90,4 +90,12 @@ box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.51);
 .overlay  a{
   color: white;
   line-height: 8px;
+}
+.attachment{
+  display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.attachment a{
+margin:10px;
 }
