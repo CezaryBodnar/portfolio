@@ -1,5 +1,7 @@
 import React from 'react'
 import './Projects.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faProjectDiagram, faSearch, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 
 export const Projects = ({ language }) => {
@@ -18,9 +20,9 @@ export const Projects = ({ language }) => {
                         <span style={{ marginBottom: "50px", fontSize: "115%" }}>{language === 'en' ? 'Project of redesign Museum of Folk Culture in Węgorzewo' : 'Projekt redesignu strony Muzeum Kultury Ludowej w Węgorzewie'}</span>
                         <div className="attachment">
                             <a href="https://drive.google.com/file/d/1VaQtw0Vpn1gf6MXymtI9XQDgQPSz2wzr/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                <span className="contact-icon"><i className="fas fa-search"></i></span></a>
+                                <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
                             <a href="https://www.figma.com/proto/qEJT1akhEdf0vJkC54b10Y/Projekt-muzeum?node-id=1%3A2&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=1%3A2" target="_blank" rel="noopener noreferrer">
-                                <span className="contact-icon"><i className="fas fa-project-diagram"></i></span></a>
+                                <span className="contact-icon"><FontAwesomeIcon icon={faProjectDiagram} size="2xs" /></span></a>
                         </div>
                     </div>
                 </div>
@@ -34,9 +36,9 @@ export const Projects = ({ language }) => {
                         <span style={{ marginBottom: "50px", fontSize: "115%" }}>{language === 'en' ? 'Website design' : 'Projekt strony internetowej'}</span>
                         <div className="attachment">
                             <a href="https://drive.google.com/file/d/1DnIY7qUU5R6Zd6lzzbZmZx82aLJr78eK/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                <span className="contact-icon"><i className="fas fa-search"></i></span></a>
+                                <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
                             <a href="https://www.figma.com/proto/e6Ma4MqvfSBrJGAqTf9qwf/Jezioro-Mamry?page-id=0%3A1&node-id=1%3A2&viewport=428%2C456%2C0.38&scaling=min-zoom&starting-point-node-id=1%3A2" target="_blank" rel="noopener noreferrer">
-                                <span className="contact-icon"><i className="fas fa-project-diagram"></i></span></a>
+                                <span className="contact-icon"><FontAwesomeIcon icon={faProjectDiagram} size="2xs" /></span></a>
                         </div>
                     </div>
                 </div>
@@ -50,9 +52,9 @@ export const Projects = ({ language }) => {
                         <span style={{ marginBottom: "50px", fontSize: "115%" }}>{language === 'en' ? 'League of legends website design - user profile, challenges' : 'Projekt strony League of legends - profil użytkownika, wyzwania'}</span>
                         <div className="attachment">
                             <a href="https://drive.google.com/file/d/11_agGgMS-FzuPH2McHM2jeiI0YgBh_Q5/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                <span className="contact-icon"><i className="fas fa-search"></i></span></a>
+                                <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
                             <a href="https://www.figma.com/proto/sPvraIlwKFUtODHE9rRPEB/Challenger-Project?page-id=0%3A1&node-id=2%3A3&viewport=902%2C274%2C0.49&scaling=contain&starting-point-node-id=2%3A3" target="_blank" rel="noopener noreferrer">
-                                <span className="contact-icon"><i className="fas fa-project-diagram"></i></span></a>
+                                <span className="contact-icon"><FontAwesomeIcon icon={faProjectDiagram} size="2xs" /></span></a>
                         </div>
                     </div>
                 </div>
@@ -66,9 +68,9 @@ export const Projects = ({ language }) => {
                         <span style={{ marginBottom: "50px", fontSize: "115%" }}>{language === 'en' ? 'Website design' : 'Projekt strony internetowej'}</span>
                         <div className="attachment">
                             <a href="https://drive.google.com/file/d/1akOfoaw6PBhxZ6G3J3izO9gPQF1Jrl_W/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                <span className="contact-icon"><i className="fas fa-search"></i></span></a>
+                                <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
                             <a href="https://xd.adobe.com/view/239f6898-3f14-4963-4a54-831663d98fd0-55ae/" target="_blank" rel="noopener noreferrer">
-                                <span className="contact-icon"><i className="fas fa-project-diagram"></i></span></a>
+                                <span className="contact-icon"><FontAwesomeIcon icon={faProjectDiagram} size="2xs" /></span></a>
                         </div>
                     </div>
                 </div>
@@ -83,7 +85,7 @@ export const Projects = ({ language }) => {
                         <span style={{ marginBottom: "50px", fontSize: "115%" }}>{language === 'en' ? 'Project of interface element' : 'Projekt elementu interfejsu'}</span>
                         <div className="attachment">
                             <a href="https://drive.google.com/file/d/1ma8nSXdwXFfsnkMH3QmZ-pf8LjDkiNfZ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                <span className="contact-icon"><i className="fas fa-search"></i></span></a>
+                                <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
 
                         </div>
                     </div>
@@ -98,7 +100,7 @@ export const Projects = ({ language }) => {
                         <span style={{ marginBottom: "50px", fontSize: "115%" }}>{language === 'en' ? 'Website design' : 'Projekt strony internetowej'}</span>
                         <div className="attachment">
                             <a href="https://drive.google.com/file/d/1oC8mY8fwFy_nE8erAhJL1kmF6Ss3945P/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                <span className="contact-icon"><i className="fas fa-search"></i></span></a>
+                                <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
 
                         </div>
                     </div>

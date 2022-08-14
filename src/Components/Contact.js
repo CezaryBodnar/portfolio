@@ -13,7 +13,7 @@ export const Contact = ({ language }) => {
                     <span className="text-medium"><a href="mailto:cezary.bodnar@gmail.com">cezary.bodnar@gmail.com</a></span>
                 </div>
                 <div className="phone">
-                    <span className="contact-icon"><i style={{ cursor: 'default' }}></i> <img class="icons" src="/smartphone.svg" alt="" /></span>
+                    <span className="contact-icon"><i style={{ cursor: 'default' }}></i> <img className="icons" src="/smartphone.svg" alt="" /></span>
                     <span className="title-bold">{language === 'en' ? 'Phone:' : 'Telefon:'}</span>
                     <span className="text-medium">{language === 'en' ? '+48 697 142 005' : '697 142 005'}</span>
                 </div>
