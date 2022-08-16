@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 
 function Nav({ language, setLanguage }) {
@@ -8,6 +9,9 @@ function Nav({ language, setLanguage }) {
     return (
         <>
             <nav id={'nav'} className="navbar">
+                <Link to="/">
+                    <span className="nav-logo-text">Cezary Bodnar</span>
+                </Link>
                 <div className="menu-icon" onClick={() => setOpenMenu(!openMenu)}>
                     <i className={openMenu ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
@@ -21,12 +25,12 @@ function Nav({ language, setLanguage }) {
                     <HashLink smooth to="/#contact">
                         <li>{language === 'en' ? 'Contact' : 'Kontakt'}</li>
                     </HashLink>
-                </ul>
-                <div className="flags">
+
                     <img className="language" src="/images/polski.png" alt="" onClick={() => setLanguage('pl')} />
                     <img className="language" src="/images/angielski.png" alt="" onClick={() => setLanguage('en')} />
 
-                </div>
+                </ul>
+
 
             </nav>
             <div className="nav-hidden" style={{ display: openMenu ? 'block' : 'none' }}>

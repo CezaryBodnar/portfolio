@@ -1,7 +1,7 @@
 import React from 'react'
 import './Projects.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faProjectDiagram, faSearch, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faProjectDiagram, faSearch } from '@fortawesome/free-solid-svg-icons'
 
 
 export const Projects = ({ language }) => {
@@ -9,7 +9,7 @@ export const Projects = ({ language }) => {
     return (
         <div id={'projects'} className="project-container">
 
-            <h1 className="about-title" style={{ paddingTop: "120px" }}>{language === 'en' ? 'Projects' : 'Projekty'}</h1>
+            {/*<h1 className="about-title" style={{ paddingTop: "120px" }}>{language === 'en' ? 'Projects' : 'Projekty'}</h1>*/}
             <div className="projects-content">
                 <div className="project-tile tile1">
                     <img className="project-image" src="/projects/muzeum.png " alt="" />
