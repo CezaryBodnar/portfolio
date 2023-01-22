@@ -1,7 +1,5 @@
 import React from 'react'
 import './About.css'
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
 import { motion } from "framer-motion"
 
 export const About = ({ language }) => {
@@ -21,50 +19,6 @@ export const About = ({ language }) => {
                 </div>
 
             </div>
-            <hr></hr>
-            <h3 className="about-other">{language === 'en' ? 'Other skills' : 'Inne umiejętności'}</h3>
-
-            <Tabs>
-                <TabList>
-                    <div className="skills">
-                        <Tab><span className="skill-item">{language === 'en' ? '2D Graphics' : 'Grafika 2D '}</span></Tab>
-                        <Tab><span className="skill-item">Frontend dev</span></Tab>
-                        <Tab><span className="skill-item">{language === 'en' ? '3D Graphics' : 'Grafika 3D '}</span></Tab>
-                        <Tab><span className="skill-item">{language === 'en' ? 'Drawing' : 'Rysowanie'}</span></Tab>
-                    </div>
-                </TabList>
-                <TabPanel>
-                    <div className="gallery-content">
-                        <img className="gallery-image-drawing" src="/images/mr_rekkles.jpg" alt="x" />
-                        <img className="gallery-image-drawing" src="/images/infografika.jpg" alt="x" />
-                        <img className="gallery-image-drawing" src="/images/jarmark.jpg" alt="x" />
-                    </div>
-                </TabPanel>
-                <TabPanel>
-                    <div className="gallery-content">
-                        <img className="gallery-image" src="/images/1.JPG" alt="" />
-                        <img className="gallery-image" src="/images/2.JPG" alt="" />
-                        <img className="gallery-image" src="/images/3.JPG" alt="" />
-                    </div>
-                </TabPanel>
-                <TabPanel>
-                    <div className="gallery-content">
-                        <img className="gallery-image" src="/images/czajniczek.png" alt="" />
-                        <img className="gallery-image" src="/images/render.png" alt="" />
-                        <img className="gallery-image" src="/images/akademiik render2.jpg" alt="" />
-                    </div>
-                </TabPanel>
-
-                <TabPanel>
-                    <div className="gallery-content">
-                        <img className="gallery-image-drawing" src="/images/cezary-bodnar-13.jpg" alt="" />
-                        <img className="gallery-image-drawing" src="/images/cezary-bodnar-12.jpg" alt="" />
-                        <img className="gallery-image-drawing" src="/images/blond_with_bun_rys.jpg" alt="" />
-                    </div>
-                </TabPanel>
-
-
-            </Tabs>
         </div>
     )
 }

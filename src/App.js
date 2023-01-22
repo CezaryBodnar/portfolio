@@ -10,6 +10,8 @@ import './App.css';
 import './Components/MediaQuery.css';
 
 function App() {
+  const [language, setLanguage] = useState('pl');
+
   const [project1, setProject1] = useState(false);
   const [project2, setProject2] = useState(false);
   const [project3, setProject3] = useState(false);
@@ -17,7 +19,7 @@ function App() {
   const [project5, setProject5] = useState(false);
   const [project6, setProject6] = useState(false);
 
-  const [language, setLanguage] = useState('pl');
+
 
   useEffect(() => {
     if (project1) {
@@ -90,12 +92,14 @@ function App() {
       <div className="App">
         <Nav language={language} setLanguage={setLanguage} />
         <Hero language={language} />
+
         <Projects language={language} project1={project1} setProject1={setProject1}
           project2={project2} setProject2={setProject2}
           project3={project3} setProject3={setProject3}
           project4={project4} setProject4={setProject4}
           project5={project5} setProject5={setProject5}
           project6={project6} setProject6={setProject6} />
+
         <About language={language} />
         <Contact language={language} />
         <Footer />
