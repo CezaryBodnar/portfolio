@@ -14,14 +14,141 @@ export const Projects = ({ language }) => {
             <Tabs>
                 <TabList>
                     <div className="skills">
-                        <Tab><span className="skill-item">{language === 'en' ? 'UI/UX Design' : 'UI/UX Design'}</span></Tab>
-                        <Tab><span className="skill-item">{language === 'en' ? 'DTP Graphics' : 'Grafika DTP'}</span></Tab>
-                        <Tab><span className="skill-item">{language === 'en' ? '2D Graphics' : 'Grafika 2D '}</span></Tab>
-                        <Tab><span className="skill-item">Frontend Dev</span></Tab>
                         <Tab><span className="skill-item">{language === 'en' ? '3D Graphics' : 'Grafika 3D '}</span></Tab>
+                        <Tab><span className="skill-item">{language === 'en' ? '2D Graphics' : 'Grafika 2D '}</span></Tab>
+                        <Tab><span className="skill-item">{language === 'en' ? 'DTP Graphics' : 'Grafika DTP'}</span></Tab>
+                        <Tab><span className="skill-item">{language === 'en' ? 'UI/UX Design' : 'UI/UX Design'}</span></Tab>
+                        {/*<Tab><span className="skill-item">Frontend Dev</span></Tab>*/}
                         <Tab><span className="skill-item">{language === 'en' ? 'Drawing' : 'Rysowanie'}</span></Tab>
                     </div>
                 </TabList>
+
+                <TabPanel>
+                    <div className="gallery-content">
+                        <img className="gallery-image" src="/images/1_piętro.jpg" alt="" />
+                        <img className="gallery-image" src="/images/parter.jpg" alt="" />
+                        <img className="gallery-image" src="/images/korytarz_poddasze.jpg" alt="" />
+                        <img className="gallery-image" src="/images/pokój_poddasze.jpg" alt="" />
+                        <img className="gallery-image" src="/images/render.png" alt="" />
+                        <img className="gallery-image" src="/images/akademiik render2.jpg" alt="" />
+                        <img className="gallery-image" src="/images/czajniczek.png" alt="" />
+
+                    </div>
+                </TabPanel>
+
+                <TabPanel>
+                    <div className="gallery-content">
+                        <img className="gallery-image-drawing" src="/images/mr_rekkles.jpg" alt="x" />
+                        <img className="gallery-image-drawing" src="/images/infografika.jpg" alt="x" />
+                        <img className="gallery-image-drawing" src="/images/jarmark.jpg" alt="x" />
+                    </div>
+                </TabPanel>
+
+                <TabPanel>
+                    <div className="projects-content">
+                        <div className="project-tile tile1">
+                            <img className="project-image" src="/projects/otwarcie_stodoły.jpg " alt="" />
+
+                            <div className="overlay">
+                                <h1 style={{ margin: '0px', fontSize: "120%" }}>{language === 'en' ? 'Invitation to the opening of the barn' : 'Zaproszenie na otwarcie stodoły'}</h1>
+                                <hr></hr>
+                                <div className="attachment">
+                                    <a id="my-anchor-element-left" href="https://drive.google.com/file/d/1nQqSJegYsZHWl4DYQyeN9sYQKWkO1DlT/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                        <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
+                                    <Tooltip anchorId="my-anchor-element-left" content="Zaproszenie wersja 1" place="bottom" style={{ backgroundColor: "rgb(227, 227, 227)", color: "rgb(28, 28, 28)", fontSize: "18px" }} />
+                                    <a id="my-anchor-element-right" href="https://drive.google.com/file/d/1hoS8YLKGz8UT1cYvJxbXrVmLgZxF7KI5/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                        <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
+                                    <Tooltip anchorId="my-anchor-element-right" content="Zaproszenie wersja 2" place="bottom" style={{ backgroundColor: "rgb(227, 227, 227)", color: "rgb(28, 28, 28)", fontSize: "18px" }} />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="project-tile tile2">
+                            <img className="project-image" src="/projects/rollup_jezioromamry.jpg" alt="" />
+
+                            <div className="overlay">
+                                <h1 style={{ margin: '0px', fontSize: "120%" }}>{language === 'en' ? `Mamry's lake. Do you know that?` : 'Jezioro Mamry. Czy wiesz że?'}</h1>
+                                <hr></hr>
+                                <div className="attachment">
+                                    <a id="my-anchor-element" href="https://drive.google.com/file/d/1aYNr4Ttoq8QJh2RLXT7b4P_H50nf-I_a/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                        <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
+                                    <Tooltip anchorId="my-anchor-element" content="Rollup pełna wersja" place="bottom" style={{ backgroundColor: "rgb(227, 227, 227)", color: "rgb(28, 28, 28)", fontSize: "18px" }} />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="project-tile tile3">
+                            <img className="project-image" src="/projects/wystawa_helwing.jpg" alt="" />
+
+                            <div className="overlay">
+                                <h1 style={{ margin: '0px', fontSize: "120%" }}>{language === 'en' ? `Helwing letter's exhibition` : 'Wystawa Listy Helwinga'}</h1>
+                                <hr></hr>
+                                <div className="attachment">
+                                    <a id="my-anchor-element-helwing-left" href="https://drive.google.com/file/d/1dQCq-iCbjyEFfXEzkFta3mjuPR0lO0ev/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                        <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
+                                    <Tooltip anchorId="my-anchor-element-helwing-left" content="Katalog pełna wersja" place="bottom" style={{ backgroundColor: "rgb(227, 227, 227)", color: "rgb(28, 28, 28)", fontSize: "18px" }} />
+                                    <a id="my-anchor-element-helwing-right" href="https://drive.google.com/file/d/1CXa6HiFOvbu4NYt0A59kwuTKpDU5AH9Z/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                        <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
+                                    <Tooltip anchorId="my-anchor-element-helwing-right" content="Plakat pełna wersja" place="bottom" style={{ backgroundColor: "rgb(227, 227, 227)", color: "rgb(28, 28, 28)", fontSize: "18px" }} />
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="project-tile tile4">
+                            <img className="project-image" src="/projects/wystawa_kulesza.jpg" alt="" />
+
+                            <div className="overlay">
+                                <h1 style={{ margin: '0px', fontSize: "120%" }}>{language === 'en' ? `Exhibition Józef Kulesza's sculptures` : 'Wystawa rzeźby Józefa Kuleszy'}</h1>
+                                <hr></hr>
+                                <div className="attachment">
+                                    <a id="my-anchor-element-kulesza-left" href="https://drive.google.com/file/d/1DjhQIgN0Cobwf3TYEbu6YMuBbSAhzlIp/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                        <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
+                                    <Tooltip anchorId="my-anchor-element-kulesza-left" content="Katalog pełna wersja" place="bottom" style={{ backgroundColor: "rgb(227, 227, 227)", color: "rgb(28, 28, 28)", fontSize: "18px" }} />
+                                    <a id="my-anchor-element-kulesza-right" href="https://drive.google.com/file/d/1L_rYZbsO4ASw5u0IS83oLB-5teJQM-7_/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                        <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
+                                    <Tooltip anchorId="my-anchor-element-kulesza-right" content="Plakat pełna wersja" place="bottom" style={{ backgroundColor: "rgb(227, 227, 227)", color: "rgb(28, 28, 28)", fontSize: "18px" }} />
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div className="project-tile tile5">
+                            <img className="project-image" src="/projects/wystawa_agaty.jpg" alt="" />
+
+                            <div className="overlay">
+                                <h1 style={{ margin: '0px', fontSize: "120%" }}>{language === 'en' ? 'Exhibition Agata Wiszniewska-Kubiszyn' : 'Wystawa Agaty Wiszniewskiej-Kubiszyn'}</h1>
+                                <hr></hr>
+                                <div className="attachment">
+
+                                    <a id="my-anchor-element-agata-left" href="https://drive.google.com/file/d/14_y3FZxJKx9RSMFUipMbVK3DnRbKt-HV/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                        <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
+                                    <Tooltip anchorId="my-anchor-element-agata-left" content="Katalog pełna wersja" place="bottom" style={{ backgroundColor: "rgb(227, 227, 227)", color: "rgb(28, 28, 28)", fontSize: "18px" }} />
+                                    <a id="my-anchor-element-agata-right" href="https://drive.google.com/file/d/1o13FXS7AZXW1rqL4kB98cfmKBH-DAoq3/view?usp=share_link" target="_blank" rel="noopener noreferrer">
+                                        <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
+                                    <Tooltip anchorId="my-anchor-element-agata-right" content="Plakat pełna wersja" place="bottom" style={{ backgroundColor: "rgb(227, 227, 227)", color: "rgb(28, 28, 28)", fontSize: "18px" }} />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="project-tile tile6">
+                            <img className="project-image" src="/projects/ulotka_muzeum.jpg" alt="" />
+
+                            <div className="overlay">
+                                <h1 style={{ margin: '0px', fontSize: "120%" }}>{language === 'en' ? 'Flyer museum promotion' : 'Ulotka promocja Muzeum'}</h1>
+                                <hr></hr>
+                                <div className="attachment">
+                                    <a id="my-anchor-element-ulotka-right" href="https://drive.google.com/file/d/1x3SLVkouRAYFd7jzvJ7ZL7hHmAnWn-3U/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                        <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
+                                    <Tooltip anchorId="my-anchor-element-ulotka-right" content="Ulotka pełna wersja" place="bottom" style={{ backgroundColor: "rgb(227, 227, 227)", color: "rgb(28, 28, 28)", fontSize: "18px" }} />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </TabPanel>
+
                 <TabPanel>
                     <div className="projects-content">
                         <div className="project-tile tile1">
@@ -103,7 +230,7 @@ export const Projects = ({ language }) => {
                                 </div>
                             </div>
                         </div>
-
+                        {/*
                         <div className="project-tile tile6">
                             <img className="project-image" src="/projects/budowlanka_thumbnail.png" alt="" />
 
@@ -118,120 +245,10 @@ export const Projects = ({ language }) => {
                                 </div>
                             </div>
                         </div>
-
+                         */}
                     </div>
                 </TabPanel>
-                <TabPanel>
-                    <div className="projects-content">
-                        <div className="project-tile tile1">
-                            <img className="project-image" src="/projects/otwarcie_stodoły.png " alt="" />
-
-                            <div className="overlay">
-                                <h1 style={{ margin: '0px', fontSize: "120%" }}>{language === 'en' ? 'Invitation to the opening of the barn' : 'Zaproszenie na otwarcie stodoły'}</h1>
-                                <hr></hr>
-                                <div className="attachment">
-                                    <a id="my-anchor-element-left" href="https://drive.google.com/file/d/1nQqSJegYsZHWl4DYQyeN9sYQKWkO1DlT/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                        <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
-                                    <Tooltip anchorId="my-anchor-element-left" content="Zaproszenie wersja 1" place="bottom" style={{ backgroundColor: "rgb(227, 227, 227)", color: "rgb(28, 28, 28)", fontSize: "18px" }} />
-                                    <a id="my-anchor-element-right" href="https://drive.google.com/file/d/1hoS8YLKGz8UT1cYvJxbXrVmLgZxF7KI5/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                        <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
-                                    <Tooltip anchorId="my-anchor-element-right" content="Zaproszenie wersja 2" place="bottom" style={{ backgroundColor: "rgb(227, 227, 227)", color: "rgb(28, 28, 28)", fontSize: "18px" }} />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="project-tile tile2">
-                            <img className="project-image" src="/projects/rollup_jezioromamry.png" alt="" />
-
-                            <div className="overlay">
-                                <h1 style={{ margin: '0px', fontSize: "120%" }}>{language === 'en' ? `Mamry's lake. Do you know that?` : 'Jezioro Mamry. Czy wiesz że?'}</h1>
-                                <hr></hr>
-                                <div className="attachment">
-                                    <a id="my-anchor-element" href="https://drive.google.com/file/d/1aYNr4Ttoq8QJh2RLXT7b4P_H50nf-I_a/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                        <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
-                                    <Tooltip anchorId="my-anchor-element" content="Rollup pełna wersja" place="bottom" style={{ backgroundColor: "rgb(227, 227, 227)", color: "rgb(28, 28, 28)", fontSize: "18px" }} />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="project-tile tile3">
-                            <img className="project-image" src="/projects/wystawa_helwing.png" alt="" />
-
-                            <div className="overlay">
-                                <h1 style={{ margin: '0px', fontSize: "120%" }}>{language === 'en' ? `Helwing letter's exhibition` : 'Wystawa Listy Helwinga'}</h1>
-                                <hr></hr>
-                                <div className="attachment">
-                                    <a id="my-anchor-element-helwing-left" href="https://drive.google.com/file/d/1dQCq-iCbjyEFfXEzkFta3mjuPR0lO0ev/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                        <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
-                                    <Tooltip anchorId="my-anchor-element-helwing-left" content="Katalog pełna wersja" place="bottom" style={{ backgroundColor: "rgb(227, 227, 227)", color: "rgb(28, 28, 28)", fontSize: "18px" }} />
-                                    <a id="my-anchor-element-helwing-right" href="https://drive.google.com/file/d/1CXa6HiFOvbu4NYt0A59kwuTKpDU5AH9Z/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                        <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
-                                    <Tooltip anchorId="my-anchor-element-helwing-right" content="Plakat pełna wersja" place="bottom" style={{ backgroundColor: "rgb(227, 227, 227)", color: "rgb(28, 28, 28)", fontSize: "18px" }} />
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="project-tile tile4">
-                            <img className="project-image" src="/projects/wystawa_kulesza.png" alt="" />
-
-                            <div className="overlay">
-                                <h1 style={{ margin: '0px', fontSize: "120%" }}>{language === 'en' ? `Exhibition Józef Kulesza's sculptures` : 'Wystawa rzeźby Józefa Kuleszy'}</h1>
-                                <hr></hr>
-                                <div className="attachment">
-                                    <a id="my-anchor-element-kulesza-left" href="https://drive.google.com/file/d/1DjhQIgN0Cobwf3TYEbu6YMuBbSAhzlIp/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                        <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
-                                    <Tooltip anchorId="my-anchor-element-kulesza-left" content="Katalog pełna wersja" place="bottom" style={{ backgroundColor: "rgb(227, 227, 227)", color: "rgb(28, 28, 28)", fontSize: "18px" }} />
-                                    <a id="my-anchor-element-kulesza-right" href="https://drive.google.com/file/d/1L_rYZbsO4ASw5u0IS83oLB-5teJQM-7_/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                        <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
-                                    <Tooltip anchorId="my-anchor-element-kulesza-right" content="Plakat pełna wersja" place="bottom" style={{ backgroundColor: "rgb(227, 227, 227)", color: "rgb(28, 28, 28)", fontSize: "18px" }} />
-
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div className="project-tile tile5">
-                            <img className="project-image" src="/projects/wystawa_agaty.png" alt="" />
-
-                            <div className="overlay">
-                                <h1 style={{ margin: '0px', fontSize: "120%" }}>{language === 'en' ? 'Exhibition Agata Wiszniewska-Kubiszyn' : 'Wystawa Agaty Wiszniewskiej-Kubiszyn'}</h1>
-                                <hr></hr>
-                                <div className="attachment">
-
-                                    <a id="my-anchor-element-agata-left" href="https://drive.google.com/file/d/14_y3FZxJKx9RSMFUipMbVK3DnRbKt-HV/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                        <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
-                                    <Tooltip anchorId="my-anchor-element-agata-left" content="Katalog pełna wersja" place="bottom" style={{ backgroundColor: "rgb(227, 227, 227)", color: "rgb(28, 28, 28)", fontSize: "18px" }} />
-                                    <a id="my-anchor-element-agata-right" href="https://drive.google.com/file/d/1o13FXS7AZXW1rqL4kB98cfmKBH-DAoq3/view?usp=share_link" target="_blank" rel="noopener noreferrer">
-                                        <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
-                                    <Tooltip anchorId="my-anchor-element-agata-right" content="Plakat pełna wersja" place="bottom" style={{ backgroundColor: "rgb(227, 227, 227)", color: "rgb(28, 28, 28)", fontSize: "18px" }} />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="project-tile tile6">
-                            <img className="project-image" src="/projects/ulotka_muzeum.png" alt="" />
-
-                            <div className="overlay">
-                                <h1 style={{ margin: '0px', fontSize: "120%" }}>{language === 'en' ? 'Flyer museum promotion' : 'Ulotka promocja Muzeum'}</h1>
-                                <hr></hr>
-                                <div className="attachment">
-                                    <a id="my-anchor-element-ulotka-right" href="https://drive.google.com/file/d/1x3SLVkouRAYFd7jzvJ7ZL7hHmAnWn-3U/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                        <span className="contact-icon"><FontAwesomeIcon icon={faSearch} size="2xs" /></span></a>
-                                    <Tooltip anchorId="my-anchor-element-ulotka-right" content="Ulotka pełna wersja" place="bottom" style={{ backgroundColor: "rgb(227, 227, 227)", color: "rgb(28, 28, 28)", fontSize: "18px" }} />
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </TabPanel>
-                <TabPanel>
-                    <div className="gallery-content">
-                        <img className="gallery-image-drawing" src="/images/mr_rekkles.jpg" alt="x" />
-                        <img className="gallery-image-drawing" src="/images/infografika.jpg" alt="x" />
-                        <img className="gallery-image-drawing" src="/images/jarmark.jpg" alt="x" />
-                    </div>
-                </TabPanel>
+                {/*
                 <TabPanel>
                     <div className="gallery-content">
                         <img className="gallery-image" src="/images/1.JPG" alt="" />
@@ -239,18 +256,7 @@ export const Projects = ({ language }) => {
                         <img className="gallery-image" src="/images/3.JPG" alt="" />
                     </div>
                 </TabPanel>
-                <TabPanel>
-                    <div className="gallery-content">
-                        <img className="gallery-image" src="/images/czajniczek.png" alt="" />
-                        <img className="gallery-image" src="/images/render.png" alt="" />
-                        <img className="gallery-image" src="/images/akademiik render2.jpg" alt="" />
-                        <img className="gallery-image" src="/images/1_piętro.jpg" alt="" />
-                        <img className="gallery-image" src="/images/parter.jpg" alt="" />
-                        <img className="gallery-image" src="/images/korytarz_poddasze.jpg" alt="" />
-                        <img className="gallery-image" src="/images/pokój_poddasze.jpg" alt="" />
-                    </div>
-                </TabPanel>
-
+*/}
                 <TabPanel>
                     <div className="gallery-content">
                         <img className="gallery-image-drawing" src="/images/cezary-bodnar-13.jpg" alt="" />
